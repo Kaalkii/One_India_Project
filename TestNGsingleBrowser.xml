@@ -10,11 +10,11 @@
 	<test name="chrome test">
 
 
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 				
 			<!--        -->	
-			<class name="com.OneIndiaBank.TestCases.gmail_login" />
+			
 
 			<!-- <class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" /> -->	
 			
@@ -28,9 +28,6 @@
 			
 			<!--<class name="com.OneIndiaBank.TestCases.TC_CustomerBalanceEnquiry_004" />-->	
 			
-
-
-
 		</classes>
 
 	</test>

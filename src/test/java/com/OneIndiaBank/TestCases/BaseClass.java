@@ -51,10 +51,7 @@ public class BaseClass {
 
 
 		if(br.equalsIgnoreCase("chrome"))
-		{
-//			System.setProperty("webdriver.chrome.driver", readconfig.getChrome());
-			
-			
+		{	
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();		
 			
@@ -62,25 +59,20 @@ public class BaseClass {
 
 		else if(br.equalsIgnoreCase("firefox"))
 		{
-//			System.setProperty("webdriver.gecko.driver", readconfig.getFox());
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 
 		else if(br.equalsIgnoreCase("Edge"))
 		{
-//			System.setProperty("webdriver.edge.driver", readconfig.getEdge());
 			WebDriverManager.edgedriver().setup();
-//			WebDriverManager.iedriver().setup();
 			driver = new EdgeDriver();	
 		}
 
 
 		//Launching WebSite of ONEINDIABANK
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		driver.get(baseURL);
-		
-		driver.get("https://accounts.google.com/signup");
+		driver.get(baseURL);
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		logger.info("URL is opened");
