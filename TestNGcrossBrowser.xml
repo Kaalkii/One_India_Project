@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="One India Bank" thread-count="2" parallel="tests" >
+
+	<listeners>
+		<listener class-name="com.OneIndiaBank.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="chrome test">
+
+
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<!--   <class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" />  -->
+			<class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" />
+			
+			
+
+		</classes>
+
+	</test>
+	
+	<test name="firefox Test">
+
+
+		<parameter name="browser" value="firefox" />
+		<classes>
+
+			<!--   <class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" />  -->
+			<class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" />
+			
+			
+
+		</classes>
+
+	</test>
+	
+	
+</suite>

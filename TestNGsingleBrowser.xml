@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="One India Bank">
+
+	<listeners>
+		<listener class-name="com.OneIndiaBank.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="chrome test">
+
+
+		<parameter name="browser" value="firefox" />
+		<classes>
+				
+			<!--        -->	
+			<class name="com.OneIndiaBank.TestCases.gmail_login" />
+
+			<!-- <class name="com.OneIndiaBank.TestCases.Login_into_Admin_panel" /> -->	
+			
+			<!-- <class name="com.OneIndiaBank.TestCases.Login_into_Customer_panel" /> -->
+			
+			<!-- <class name="com.OneIndiaBank.TestCases.TC_AdminloginTestDDT_001" /> -->	
+			
+			<!-- <class name="com.OneIndiaBank.TestCases.TC_AdminAddBranch_002" />    -->	
+			
+			<!-- <class name="com.OneIndiaBank.TestCases.TC_AdminEditBranch_003" /> -->
+			
+			<!--<class name="com.OneIndiaBank.TestCases.TC_CustomerBalanceEnquiry_004" />-->	
+			
+
+
+
+		</classes>
+
+	</test>
+</suite>
